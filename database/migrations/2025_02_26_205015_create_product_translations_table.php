@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
             $table->string('locale')->index();
             $table->string('name');
-            $table->text('description');
+            $table->text('description')->nullable();
         
             $table->unique(['product_id', 'locale']);
         });

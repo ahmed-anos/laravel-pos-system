@@ -3,7 +3,7 @@
 return [
     'dashboard' => 'الرئيسيه',
     'logout' => 'تسجيل الخروج',
-
+    'title' =>'اداره الطلبات',
     'add' => 'اضف',
     'create' => 'اضافه',
     'read' => 'عرض',
@@ -40,7 +40,7 @@ return [
     'add_order' => 'اضف طلب',
     'edit_order' => 'تعديل طلب',
 
-    'users' => 'المشرفين',
+    'users' => 'الويتر',
     'first_name' => 'الاسم الاول',
     'last_name' => 'الاسم الاخير',
     'email' => 'البريد الاكتروني',
@@ -69,6 +69,12 @@ return [
     'sale_price' => 'سعر البيع',
     'stock' => 'المخزن',
     'profit_percent' => 'المكسب',
+
+
+    'user_order_number'=>'رقم الاوردر',
+    'user_order_table'=>'رقم المجلس',
+    'user_order_products'=>'المنتجات',
+    'user_order_total'=>'الاجمالي',
 
     'ar' => [
         'name' => 'الاسم بالغه العربيه',

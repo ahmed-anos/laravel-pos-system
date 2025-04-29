@@ -3,7 +3,7 @@
 return [
     'dashboard' => 'Dashboard',
     'logout' => ' logout',
-
+    'title' =>'Order Management',
     'add' => 'add',
     'create' => 'create',
     'read' => 'display',
@@ -40,7 +40,7 @@ return [
     'add_order' => 'add_order',
     'edit_order' => 'edit_order',
 
-    'users' => 'users',
+    'users' => 'Waiter',
     'first_name' => 'first_name',
     'last_name' => 'last_name',
     'email' => 'email',
@@ -68,6 +68,11 @@ return [
     'sale_price' => 'sale_price',
     'stock' => 'stock',
     'profit_percent' => 'profit_percent',
+
+    'user_order_number'=>' order number',
+    'user_order_table'=>' order table',
+    'user_order_products'=>'products',
+    'user_order_total'=>'total',
 
     'ar' => [
         'name' => 'الاسم بالغه العربيه',

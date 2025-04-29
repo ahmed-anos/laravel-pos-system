@@ -10,6 +10,7 @@ use App\Http\Controllers\Dashboard\ProductController;
 use App\Http\Controllers\Dashboard\UserController;
 
 use App\Http\Controllers\Dashboard\WelcomeController;
+use App\Http\Controllers\UserOrderController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -45,6 +46,14 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
             Route::resource('orders', OrderController::class);
             Route::get('/orders/{order}/products', [OrderController::class, 'products'])->name('orders.products');
       
+            //User_Orders routes
+
+            Route::get('user_orders' ,[UserOrderController::class , 'index'])->name('user_orders.index');
+            Route::get('user_orders/create' ,[UserOrderController::class , 'create'])->name('user_orders.create');
+            Route::post('user_orders/create' ,[UserOrderController::class , 'store'])->name('user_orders.store');
+            Route::delete('user_orders/{id}' ,[UserOrderController::class , 'destroy'])->name('user_orders.destroy');
+            Route::get('user_orders/{id}' ,[UserOrderController::class , 'edit'])->name('user_orders.edit');
+            Route::put('user_orders/{id}' ,[UserOrderController::class , 'update'])->name('user_orders.update');
             //user routes
             // Route::resource('users', [UserController::class]);
             Route::resource('users', UserController::class);
